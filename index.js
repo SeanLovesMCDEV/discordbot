@@ -7,7 +7,6 @@ const cooldowns = new Discord.Collection();
 
 
 
-
 const prefix = 'mr';
 
 client.once('ready', () => {
@@ -131,6 +130,14 @@ client.on('message', message => {
                 })
                 break;
             }
+
+
+        case "hetest":
+            message.channel.send('eneunuowowhatsthis')
+
+
+
+
 
 
         
