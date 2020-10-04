@@ -164,9 +164,7 @@ client.on('message', message => {
 
             
 
-        default:
-            const channel = client.channels.cache.get('761348067810213908')
-            channel.send(`${message.author.tag} Ran the wong command :(`)
+        
                
             
 
