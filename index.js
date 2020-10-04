@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const Embed = new Discord.MessageEmbed()
 const client = new Discord.Client
 const cooldowns = new Discord.Collection();
+client.user.setActivity('For commands', { type: 'LISTENING' });
 
 
 
