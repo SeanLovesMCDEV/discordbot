@@ -134,6 +134,23 @@ client.on('message', message => {
 
         case "hetest":
             message.channel.send('eneunuowowhatsthis')
+            break;
+
+        case "info":
+            const info = new Discord.MessageEmbed()
+            .setAuthor(`${message.author.username}`, message.author.displayAvatarURL())
+            .setFooter(`Reqested by: ${message.author.username}`, message.author.displayAvatarURL())
+            .setColor('7982DA')
+            .setDescription('Mr.Wiggles Made by:\n\nIdeas:\n`appmonster` `Pyczowskyy` `Trent`\nDevs:\n`Seenloveswumpus` `RandomKittens`')
+            if(!args[1]){
+                message.channel.send(info).then(sentMessage =>{
+                    const channel = client.channels.cache.get('761348067810213908')
+                    channel.send(`${message.author.tag} Ran the command info!`)
+                })
+            }
+
+
+
 
 
 
