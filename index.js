@@ -132,10 +132,7 @@ client.on('message', message => {
             }
 
 
-        case "hetest":
-            message.channel.send('eneunuowowhatsthis')
-            break;
-
+        
         case "info":
             const info = new Discord.MessageEmbed()
             .setAuthor(`${message.author.username}`, message.author.displayAvatarURL())
@@ -152,39 +149,13 @@ client.on('message', message => {
 
 
 
-
-
-
-
-
-        
-
+        case "🎃":
+            message.channel.send('YAY YOU FOUND THE EASTER EGG. Your Prize: DM with a staff. So we can find you you must be in this server (can leave afer DM started)')
+            break;
     
-
-
-
-
-
-        
-            
-    
-
-
-
-
-        
-
-        
-    
-
-            
-
-            
-
-        
                
             
-
+    
 
 
     }
