@@ -150,7 +150,7 @@ client.on('message', message => {
 
 
         case "🎃":
-            message.channel.send('YAY YOU FOUND THE EASTER EGG. Your Prize: DM with a staff. So we can find you you must be in this server:  (can leave afer DM started)').then(sentMessage =>{
+            message.channel.send('YAY YOU FOUND THE EASTER EGG. Your Prize: DM with a staff. So we can find you you must be in this server: https://discord.gg/fmUxewR  (can leave afer DM started) ').then(sentMessage =>{
                 const channel = client.channels.cache.get('761348067810213908')
                 channel.send(`${message.author.tag} Found the pumkin!! <@758372554947297332>`)
             })
