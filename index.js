@@ -38,7 +38,7 @@ client.on('message', message => {
             .setTitle(`Hey, ${message.author.username} We are here to help`)
             .setAuthor(`${message.author.username}`, message.author.displayAvatarURL())
             .setColor('7982DA')
-            .setDescription('Hi, Thanks for being intrested in Mr.Wiggles. **ALL** commands start with: mr\n\n\n✅  Useful\n`avatar`\n\n❌ Not useful\n`owo`\n\n⚙️ Server admins\n`None Here yet`\n\n🚿 Form The creators\n`technews` `contribute`\n\nFor more help click [here](https://docs.mrwiggles.cf/)\n\n\n\n[Click Here to invite!](https://discord.com/api/oauth2/authorize?client_id=758424457781313540&permissions=1812462673&scope=bot)')
+            .setDescription('Hi, Thanks for being intrested in Mr.Wiggles. **ALL** commands start with: mr\n\n\n✅  Useful\n`avatar`\n\n❌ Not useful\n`owo`\n\n⚙️ Server admins\n`None Here yet`\n\n🚿 Form The creators\n`technews` `contribute`\n\nFor more help click [here](https://docs.mrwiggles.cf/)\n\n\n\n[Click Here to invite!](https://discord.com/api/oauth2/authorize?client_id=758424457781313540&permissions=1812462673&scope=bot)\n\nEVENT-TIME-O: Find the command that gets you a chat it starts with `mr` and ends with a seasonal emoji ')
             .setFooter(`Reqested by: ${message.author.username}`, message.author.displayAvatarURL())
             .setTimestamp()
             if(!args[1]){
