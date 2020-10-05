@@ -38,7 +38,7 @@ client.on('message', message => {
             .setTitle(`Hey, ${message.author.username} We are here to help`)
             .setAuthor(`${message.author.username}`, message.author.displayAvatarURL())
             .setColor('7982DA')
-            .setDescription('Hi, Thanks for being intrested in Mr.Wiggles. **ALL** commands start with: mr\n\n\n✅  Useful\n`avatar`\n\n❌ Not useful\n`owo`\n\n⚙️ Server admins\n`None Here yet`\n\n🚿 Form The creators\n`technews` `contribute`\n\nFor more help click [here](https://docs.mrwiggles.cf/)\n\n\n\n[Click Here to invite!](https://discord.com/api/oauth2/authorize?client_id=758424457781313540&permissions=1812462673&scope=bot)\n\nEVENT-TIME-O: Find the command that gets you a chat it starts with `mr` and ends with a seasonal emoji ')
+            .setDescription('Hi, Thanks for being intrested in Mr.Wiggles. **ALL** commands start with: mr\n\n\n✅  Useful\n`avatar`\n\n❌ Not useful\n`owo`\n\n⚙️ Server admins\n`None Here yet`\n\n🚿 Form The creators\n`technews` `contribute`\n\nFor more help click [here](https://docs.mrwiggles.cf/)\n\n\n\n[Click Here to invite!](https://discord.com/api/oauth2/authorize?client_id=758424457781313540&permissions=1812462673&scope=bot)\n\nEVENT-TIME-O: Find the command that gets you a chat it starts with `mr` and ends with a seasonal emoji DM seanloveswumpus to claim your prize! (we are watching)')
             .setFooter(`Reqested by: ${message.author.username}`, message.author.displayAvatarURL())
             .setTimestamp()
             if(!args[1]){
@@ -150,7 +150,10 @@ client.on('message', message => {
 
 
         case "🎃":
-            message.channel.send('YAY YOU FOUND THE EASTER EGG. Your Prize: DM with a staff. So we can find you you must be in this server (can leave afer DM started)')
+            message.channel.send('YAY YOU FOUND THE EASTER EGG. Your Prize: DM with a staff. So we can find you you must be in this server:  (can leave afer DM started)').then(sentMessage =>{
+                const channel = client.channels.cache.get('761348067810213908')
+                channel.send(`${message.author.tag} Found the pumkin!! <@758372554947297332>`)
+            })
             break;
     
                
