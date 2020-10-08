@@ -45,7 +45,7 @@ client.on('message', message => {
                 message.channel.send(help).then(sentMessage =>{
                     const channel = client.channels.cache.get('761348067810213908')
                     channel.send(`${message.author.tag} Ran the command Help!`)
-                    message.channel.send('The event has expired we are no longer excepting responses 🟥')
+                    message.channel.send('The event has expired we are no longer excepting responses 🟥. The command to the easteregg: mr🎃 (*Does not work anymore*')
                 })
                 break;
             }
