@@ -11,7 +11,7 @@ const prefix = 'mr';
 
 client.once("ready", () =>{
     console.log(`Logged in as ${bot.user.tag}!`);
-    bot.user.setActivity("to mrhelp", {
+    client.user.setActivity("to mrhelp", {
         type: "LISTENING",
     });
 });
