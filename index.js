@@ -11,7 +11,7 @@ const prefix = 'mr';
 
 client.once('ready', () => {
     console.log('working')
-    client.user.setActivity('for mrhelp', { type: 'LISTENING' });
+    client.user.setActivity('for mrhelp', { type: 'WATCHING' });
     const channel = client.channels.cache.get('761348067810213908');
     channel.send('I am online! 🟢')
 
