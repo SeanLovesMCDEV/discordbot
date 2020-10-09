@@ -9,8 +9,12 @@ const cooldowns = new Discord.Collection();
 
 const prefix = 'mr';
 
-client.once('ready', () => {
-    console.log('working')
+client.once("ready", () =>{
+    console.log(`Logged in as ${bot.user.tag}!`);
+    bot.user.setActivity("to mrhelp", {
+        type: "LISTENING",
+    });
+});
     const channel = client.channels.cache.get('761348067810213908');
     channel.send('I am online! 🟢')
 
@@ -45,7 +49,7 @@ client.on('message', message => {
                 message.channel.send(help).then(sentMessage =>{
                     const channel = client.channels.cache.get('761348067810213908')
                     channel.send(`${message.author.tag} Ran the command Help!`)
-                    message.channel.send('The event has expired we are no longer excepting responses 🟥. The command to the easteregg: mr🎃 (*Does not work anymore*')
+                    message.channel.send('The event has exspired 🟥')
                 })
                 break;
             }
@@ -146,6 +150,10 @@ client.on('message', message => {
                     channel.send(`${message.author.tag} Ran the command info!`)
                 })
             }
+
+
+
+        
 
 
 
