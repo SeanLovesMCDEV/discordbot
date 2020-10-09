@@ -9,12 +9,9 @@ const cooldowns = new Discord.Collection();
 
 const prefix = 'mr';
 
-client.once("ready", () =>{
-    console.log(`Logged in as ${bot.user.tag}!`);
-    client.user.setActivity("to mrhelp", {
-        type: "LISTENING",
-    });
-});
+client.once('ready', () => {
+    console.log('working')
+    client.user.setActivity('for mrhelp', { type: 'LISTENING' });
     const channel = client.channels.cache.get('761348067810213908');
     channel.send('I am online! 🟢')
 
