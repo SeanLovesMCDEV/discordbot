@@ -11,7 +11,7 @@ const prefix = 'mr';
 
 client.once('ready', () => {
     console.log('working')
-    client.user.setActivity('for mrhelp', { type: 'WATCHING' });
+    client.user.setActivity('for mrhelp', { type: 'LISTENING' });
     const channel = client.channels.cache.get('761348067810213908');
     channel.send('I am online! 🟢')
 
@@ -146,6 +146,19 @@ client.on('message', message => {
                     const channel = client.channels.cache.get('761348067810213908')
                     channel.send(`${message.author.tag} Ran the command info!`)
                 })
+            }
+
+
+
+        case "prefix":
+            if (command === 'prefix') {
+                // if there's at least one argument, set the prefix
+                if (args.length) {
+                    await prefixes.set(message.guild.id, args[0]);
+                    return message.channel.send(`Successfully set prefix to \`${args[0]}\``);
+                }
+            
+                return message.channel.send(`Prefix is \`${await prefixes.get(message.guild.id) || globalPrefix}\``);
             }
 
 
