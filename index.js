@@ -2,9 +2,10 @@ const Discord = require('discord.js');
 const Embed = new Discord.MessageEmbed()
 const client = new Discord.Client
 const cooldowns = new Discord.Collection();
+const Keyv = require('keyv');
 
 
-
+const keyv = new Keyv();
 
 
 const prefix = 'mr';
