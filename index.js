@@ -5,7 +5,7 @@ const cooldowns = new Discord.Collection();
 
 
 
-const keyv = new Keyv();
+
 
 
 const prefix = 'mr';
